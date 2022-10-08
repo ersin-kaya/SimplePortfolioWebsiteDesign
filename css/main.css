@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* Navbar */
+#navbar {
+    background-color: #edddd4;
+}
+
+#navbar h1 {
+    color: #c44536;
+    text-shadow: 1px 1px 2px #247ba0;
+}
+
+#navbar ul li a {
+    color: #c44536;
+}
+
+#navbar ul li a:hover {
+    color: #197278;
+}
+
+
+/* Home */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-bottom: 5rem;
+}
+
+#home h2 {
+    color: #247ba0;
+    text-shadow: 0px 0px 2px #fb3640;
+}
+
+#home img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 100%;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+#home p {
+    font-size: medium;
+    font-weight: 600;
+    color:#d62839;
+    text-shadow: 0px 1px 3px #669bbc;
+}
+
+
+/* About */
+#about {
+    background-color: rgba(0, 0, 0, 0.962);
+    color: rgba(255, 255, 255, 0.822);
+    padding: 2em;
+}
+
+#about h2 {
+    width: 100%;
+    text-shadow: 2px 2px 2px #ff8800;
+}
+
+#about img {
+    width: 35%;
+    max-width: 400px;
+    float: right;
+    margin: 5.8rem auto 2rem 2rem;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+#about p {
+    margin: 4.5rem 2rem 4.5rem 0;
+}
+
+#about p::first-letter {
+    font-size: 2rem;
+    margin-right: 0.1rem;
+}
+
+
+/* Projects */
+#projects {
+    padding: 2em;
+}
+
+#projects h2 {
+    width: 100%;
+    color: #003049;
+    text-shadow: 1px 1px 2px #c1121f;
+}
+
+#projects .items {
+    margin-top: 3rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3em;
+}
+
+#projects .items .item {
+    width: 30%;
+    text-align: center;
+    padding: 0.6rem;
+    margin: 0 0.5rem;
+    background-color: #ffff6a;
+    border-radius: 0.3rem 2.5rem 2.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.25) 0px 18px 36px -18px;
+}
+
+#projects .items .item:hover {
+    background-color: #4ecdc4;
+    color: #292f36;
+}
+
+#projects .project-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+#projects .project-list ol {
+    max-width: 700px;
+    position: relative;
+}
+
+#projects .project-list ol::before {
+    content: '';
+    width: 0.5rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 8%;
+    background-color: #457b9d;
+    z-index: -1;
+    border-radius: 1rem;
+}
+
+#projects .project-list ol li {
+    padding: 0.5rem 1.5rem 1rem;
+    border-radius: 1.5rem;
+    background-color: #e63946;
+    color: whitesmoke;
+}
+
+#projects .project-list ol li + li {
+    margin-top: 1rem;
+}
+
+::marker {
+    font-weight: bolder;
+    font-size: 1.6rem;
+    color: #1d3557;
+}
+
+
+/* Achievements */
+#achievements {
+    background-color: rgba(0, 0, 0, 0.962);
+    color: rgba(255, 255, 255, 0.822);
+    padding: 2rem;
+}
+
+#achievements .container {
+    margin-bottom: 5rem;
+}
+
+#achievements h2 {
+    width: 100%;
+    text-shadow: 3px 3px 3px #0b4f6c;
+    margin-bottom: 3rem;
+}
+
+#achievements .items {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+#achievements .items .item {
+    display: flex;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.item-hr {
+    display: none;
+}
+
+#achievements .items .item .achievement-image {
+    position: relative;
+}
+
+#achievements .items .item .achievement-image img {
+    border-radius: 0.5rem;
+}
+
+#achievements .items .item .achievement-image span {
+    position: absolute;
+    background-color: #774c60;
+    color: #f7f1f1;
+    padding: 0.5rem;
+    border-radius: 0rem 1rem 0rem 1rem;
+    border: 2px solid #372549;
+    top: 0.7rem;
+    left: 0.7rem;
+}
+
+#achievements .items .item .achievement-info {
+    margin-left: 1.6rem;
+}
+
+#achievements .items .item .achievement-info .title {
+    letter-spacing: 0.36rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 1.6rem;
+}
+
+#achievements .items .item .achievement-info .description {
+    letter-spacing: 0.1rem;
+    opacity: 0.9;
+}
+
+
+/* Contact */
+#contact .contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .contact-form h2 {
+    margin-bottom: 5rem;
+    color: #035272;
+    text-shadow: 1px 1px 2px #f69087;
+}
+
+.form-control {
+    color: #774c60;
+}
+
+::placeholder {
+    letter-spacing: 0.25rem;
+    font-size: 0.9rem;
+    font-family: FontAwesome;
+    color: #fff;
+}
+
+#contact .contact-form #phone::placeholder {
+    color: #774c60;
+    font-size: 0.8rem;
+}
+
+#message {
+    resize: none;
+}
+
+.form-table td:has(.submit)
+{
+    text-align: right;
+}
+
+.form-table .submit {
+    border-color: #264653;
+    color: #264653;
+}

@@ -1,0 +1,98 @@
+/* Navbar */
+#navbar h1 {
+    width: 100%;
+    text-align: center;
+}
+
+#navbar ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.8rem;
+    font-size: 0.81rem;
+}
+
+#navbar ul li {
+    padding: 0.3em 0;
+    text-align: center;
+}
+
+
+/* Home */
+#home {
+    padding: 3.4rem;
+}
+
+#home h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+/* About */
+#about {
+    padding: 2.3rem;
+}
+
+#about p {
+    font-size: 0.89rem;
+    margin-top: 0;
+}
+
+
+/* Projects */
+#projects .items {
+    padding: 3rem 0;
+}
+
+#projects .items .item {
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+::marker {
+    font-size: 1.3rem;
+}
+
+
+/* Achievements */
+#achievements {
+    padding: 0.8rem;
+}
+
+#achievements .items .item .achievement-image img {
+    width: 100%;
+}
+
+#achievements .items .item .achievement-info .title {
+    letter-spacing: 0.16rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+#achievements .items .item .achievement-info .description {
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+
+/* Contact */
+#contact .contact-form {
+    margin: 0 1rem;
+}
+
+.form-table label {
+    font-size: 1rem;
+    display: none;
+}
+
+.form-table .submit {
+    padding: 0.5rem 1.1rem;
+}
+
+::placeholder {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: #774c60;
+}
